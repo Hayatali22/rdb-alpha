@@ -53,7 +53,8 @@ CREATE TABLE public.galaxy (
     galaxy_type character varying(50) NOT NULL,
     distance_from_earth numeric,
     age_in_millions_of_years integer,
-    has_life boolean
+    has_life boolean,
+    description text
 );
 
 
@@ -274,12 +275,12 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: galaxy; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.galaxy VALUES (1, 'Milky Way', 'Spiral', 0, 13600, true);
-INSERT INTO public.galaxy VALUES (2, 'Andromeda', 'Spiral', 2537000, 10000, false);
-INSERT INTO public.galaxy VALUES (3, 'Triangulum', 'Spiral', 2730000, 12000, false);
-INSERT INTO public.galaxy VALUES (4, 'Whirlpool', 'Spiral', 23000000, 10000, false);
-INSERT INTO public.galaxy VALUES (5, 'Sombrero', 'Spiral', 29000000, 13000, false);
-INSERT INTO public.galaxy VALUES (6, 'Cartwheel', 'Ring', 500000000, 10000, false);
+INSERT INTO public.galaxy VALUES (1, 'Milky Way', 'Spiral', 0, 13600, true, NULL);
+INSERT INTO public.galaxy VALUES (2, 'Andromeda', 'Spiral', 2537000, 10000, false, NULL);
+INSERT INTO public.galaxy VALUES (3, 'Triangulum', 'Spiral', 2730000, 12000, false, NULL);
+INSERT INTO public.galaxy VALUES (4, 'Whirlpool', 'Spiral', 23000000, 10000, false, NULL);
+INSERT INTO public.galaxy VALUES (5, 'Sombrero', 'Spiral', 29000000, 13000, false, NULL);
+INSERT INTO public.galaxy VALUES (6, 'Cartwheel', 'Ring', 500000000, 10000, false, NULL);
 
 
 --
